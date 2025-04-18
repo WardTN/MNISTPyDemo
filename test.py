@@ -16,6 +16,7 @@ for name in sorted(os.listdir(path)):
     labels.append(int(name[0]))
 images = torch.stack(images, 0)
 print(images.shape)
+
 # %% 加载模型
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = ConvNet()

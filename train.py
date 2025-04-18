@@ -87,8 +87,8 @@ def transform2onnx():
                       output_names=output_names)
 
 
-def transfrom2MnnOnnx():
-    model.load_state_dict(torch.load("model/mnist.pt"))
+# def transfrom2MnnOnnx():
+#     model.load_state_dict(torch.load("model/mnist.pt"))
 
 
 for epoch in range(EPOCHS):
